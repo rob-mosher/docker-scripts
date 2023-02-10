@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: mariadb:${MYSQL_VERSION}
+    restart: always
+    ports:
+      - "${MYSQL_PORT}:3306"
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD_HASH: ${MYSQL_PASSWORD}
+      MARIADB_MYSQL_LOCALHOST_USER: ${MARIADB_MYSQL_LOCALHOST_USER} # for health checks
