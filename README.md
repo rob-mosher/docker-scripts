@@ -4,7 +4,7 @@ Templates for developers to easily create and remove various services within the
 
 ## Pre-requisites
 
-1. **Install** Docker via [https://docs.docker.com/desktop/install/](https://docs.docker.com/desktop/install/).
+1. **Install** Docker via [https://docs.docker.com/desktop/install/](https://docs.docker.com/desktop/install/)
 
 ## Usage
 
@@ -31,3 +31,10 @@ docker-compose up -d
 ```
 docker-compose down
 ```
+
+## Mac Users
+
+May need to install the following
+
+- brew install libpq
+- brew install mongodb/brew/mongodb-database-tools
