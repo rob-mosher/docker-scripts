@@ -20,21 +20,21 @@ cd mongo
 cp .env.example .env
 ```
 
-3. **Run** docker-compose. The `-d` flag runs is a detached-state so that the command-line window can be closed without impacting the service.
+3. **Run** docker compose. The `-d` flag runs is a detached-state so that the command-line window can be closed without impacting the service.
 
 ```
-docker-compose up -d
+docker compose up -d
 ```
 
 4. To stop the container **and destroy the data within**, run from the same folder:
 
 ```
-docker-compose down
+docker compose down
 ```
 
 ## Mac Users
 
-May need to install the following
+Mac users may need to install the following:
 
 - brew install libpq
 - brew install mongodb/brew/mongodb-database-tools
