@@ -1,0 +1,7 @@
+version: "3"
+services:
+  db:
+    image: redis:${REDIS_VERSION}
+    restart: always
+    ports:
+      - "${REDIS_PORT}:6379"

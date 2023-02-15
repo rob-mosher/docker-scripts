@@ -34,7 +34,27 @@ docker compose down
 
 ## Mac Users
 
-Mac users may need to install the following:
+Mac users may need to install the following tools to interact with the various services:
 
-- brew install libpq
-- brew install mongodb/brew/mongodb-database-tools
+### Redis
+
+To gain access to the Redis CLI:
+```
+brew tap ringohub/redis-cli
+brew update && brew doctor
+brew install redis-cli
+```
+
+### Mongo
+
+To gain access to the MongoDB CLI:
+```
+brew install mongodb/brew/mongodb-database-tools
+```
+
+### Other
+
+The following *might* be needed for Postgres' `psql` to work on some systems:
+```
+brew install libpq
+```
